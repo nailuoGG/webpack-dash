@@ -14,8 +14,7 @@ before_install:
   - echo -e "machine github.com\n  login $GITHUB_TOKEN" >> ~/.netrc
   - rm -rf ./webpack.js.org && git clone --depth=1 https://github.com/webpack/webpack.js.org.git
 
- install:
-    - npm install --global yarn
-    - sudo pip install proselint
-  ],
+install:
+  - npm install --global yarn
+  - sudo pip install proselint
 script: npm run build
