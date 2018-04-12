@@ -26,4 +26,5 @@ before_install:
 install:
   - npm install --global yarn
   - sudo pip install proselint
+  - yarn
 script: npm run build
