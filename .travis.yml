@@ -8,5 +8,5 @@ cache:
    - "node_modules"
    - "webpack.js.org"
 before_install:
-  - echo -e "machine github.com\n  login $GITHUB_TOKEN" >> ~/.netr
+  - echo -e "machine github.com\n  login $GITHUB_TOKEN" >> ~/.netrc
 script: npm run build
