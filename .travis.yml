@@ -7,6 +7,13 @@ cache:
  directories:
    - "node_modules"
    - "webpack.js.org"
+
+git:
+  submodules:
+    false
+
 before_install:
   - echo -e "machine github.com\n  login $GITHUB_TOKEN" >> ~/.netrc
+  - git clone --depth=1 https://github.com/webpack/webpack.js.org.git
+
 script: npm run build
